@@ -112,8 +112,8 @@ elif [ `pgrep -lc kscreensave` -ge 1 ];then
 elif [ `pgrep -lc xautoloc` -ge 1 ]; then 
     screensaver="xautolock"
 else
-    screensaver=""
-    echo "No screensaver detected"     
+    screensaver="kscreensaver"
+    echo "No screensaver detected, will use kscreensaver"
 fi
 
 
